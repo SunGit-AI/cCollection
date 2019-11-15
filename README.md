@@ -14,3 +14,6 @@ allocate array with array_size: map->ids = allocate_array (array_size).
 for (    array_index = key_x mod array_size; 
 	map->ids[array_index] != free; //if this index is free, use this, if not, try array_index + 1
 	array_index = ( array_index + 1) mod array_size; );
+
+
+problem: if there too many collision array-indexes? Solution: hash the keys.
